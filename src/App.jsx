@@ -1,12 +1,15 @@
-import { useState } from "react";
-import postcard from "/postcard1.png";
+import data from "../data.json";
 import "./App.css";
+import postcard from "/postcard1.png";
+import Links from "./Links";
+import { DndContext } from "@dnd-kit/core";
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
+      <h1 className="text-3xl font-bold">Tina's Wish</h1>
       <div className="postcardBox">
         <a href="https://tinaswish.org/empoweru/" target="_blank">
           <img
@@ -16,11 +19,10 @@ function App() {
           />
         </a>
       </div>
-      <h1>Tina's Wish</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Click me {count}
-        </button>
+      <div className="grid grid-cols-1">
+        <DndContext>
+          <Links />
+        </DndContext>
       </div>
     </>
   );

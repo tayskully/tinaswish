@@ -1,0 +1,45 @@
+{
+    "name": "Tina's Wish",
+    "profile_image": "/postcard1.png",
+    "link": "https://www.tinaswish.org/",
+    "description": "Tina's Wish is a non-profit organization dedicated to funding scientific research for the early detection of ovarian cancer. The organization was founded in 2008 by Andrew Brozman in memory of his wife, Tina Brozman, who died of ovarian cancer in 2007. Tina's Wish has raised over $20 million for ovarian cancer research and has funded over 60 research projects at leading institutions across the United States. The organization's goal is to develop a reliable early detection test for ovarian cancer that",
+    "links": [
+        {
+            "id": 1,
+            "title": "Share to Twitter",
+            "image": "/twitter.svg",
+            "url": "https://twitter.com/intent/tweet?text=Check%20out%20Tina's%20Wish%20at%20https%3A%2F%2Fwww.tinaswish.org%2F"
+        }, 
+        {
+            "id": 2,
+            "title": "Share to Facebook",
+            "image": "/facebook.svg",
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tinaswish.org%2F"
+        },
+        {
+            "id": 3,
+            "title": "Share to Instagram",
+            "image": "/instagram.svg",
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tinaswish.org%2F"
+        },
+        {
+            "id": 4,
+            "title": "Share to LinkedIn",
+            "image": "/linkedin.svg",
+            "url": "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.tinaswish.org%2F&title=Tina's%20Wish&summary=Tina's%20Wish%20is%20a%20non-profit%20organization%20dedicated%20to%20funding%20scientific%20research%20for%20the%20early%20detection%20of%20ovarian%20cancer.&source="
+        },
+        {
+            "id": 5,
+            "title": "Share via Email",
+            "image": "/email.svg",
+            "url": "mailto:?subject=Check%20out%20Tina's%20Wish&body=Check%20out%20Tina's%20Wish%20at%20https%3A%2F%2Fwww.tinaswish.org%2F"
+        },
+        {
+            "id": 6,
+            "title": "Share to WhatsApp",
+            "image": "/whatsapp.svg",
+            "url": "https://api.whatsapp.com/send?text=Check%20out%20Tina's%20Wish%20at%20https%3A%2F%2Fwww.tinaswish.org%2F"
+        }
+
+    ]
+}
