@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    'node_modules/flowbite-react/lib/esm/**/*.js'
+  ],
 }
 

@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  border: solid red;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
 }
 
 .postcardBox {
@@ -14,6 +19,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .postcard {
   margin: 1rem;
@@ -29,6 +35,21 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+
+.tina {
+  font-family: 'Times New Roman', Times, serif;
+  size: 10rem;
+  color: #14727a;
+}
+
+.tinaslogo {
+  height: 4rem;
+}
+.fill {
+  border: #870e53;
+  padding: 20x;
+
 }
 
 
