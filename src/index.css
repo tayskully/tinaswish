@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  border: dotted red;
+} */
+
 :root {
   font-family: Helvetica, system-ui, Arial, sans-serif;
   line-height: 1.5;
