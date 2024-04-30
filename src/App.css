@@ -35,35 +35,13 @@
   font-family: 'Archivo Narrow';
   font-weight: 700;
 }
-#donate:hover {
-  background-color: #14727a;
-  color: white;
-}
-#listen:hover {
-  background-color: #edc61a;
+
+#listen:hover, #donate:hover {
+  background-color:  #edc61a;
   color: white;
 }
 
 .tinaslogo {
   height: 4rem;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
 }
 

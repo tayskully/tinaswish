@@ -11,9 +11,9 @@ const Links = () => {
   const pdfUrl = `${window.location.origin}/${postcard}`;
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
+    <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
-      <ul role="list" className="min-w-80 flex flex-col">
+      <ul role="list" className="min-w-80 flex flex-col mx-auto">
         {/* email button */}
         <EmailShareButton
           subject="A Message About Tina's Wish"
@@ -21,9 +21,9 @@ const Links = () => {
           url={pdfUrl}
         >
           <li className="flex justify-between gap-x-6 py-5" id="button">
-            <div className="flex min-w-0 gap-x-4">
+            <div className="flex items-center justify-center w-full">
               <svg
-                class="w-7 h-7 text-black me-2"
+                className="w-7 h-7 text-white me-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -32,21 +32,23 @@ const Links = () => {
                 <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
                 <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
               </svg>
-              <div className="min-w-0 flex-auto">
-                <p className="text-md font-semibold leading-6 text-gray-900">
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
                   SHARE VIA EMAIL
                 </p>
-                <p className="mt-1 truncate text-xs leading-5 text-gray-500"></p>
               </div>
             </div>
           </li>
         </EmailShareButton>
         {/* facebook button */}
         <FacebookShareButton url={pdfUrl}>
-          <li className="flex justify-between gap-x-6 py-5" id="button">
-            <div className="flex min-w-0 gap-x-4">
+          <li
+            className="flex items-center justify-center gap-x-6 py-5 w-full"
+            id="button"
+          >
+            <div className="flex items-center justify-center w-full">
               <svg
-                className="w-8 h-8 me-2"
+                className="w-8 h-8 me-2 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -59,22 +61,26 @@ const Links = () => {
                 />
               </svg>
 
-              <div className="min-w-0 flex-auto">
-                <p className="text-md font-semibold leading-6 text-gray-900">
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
                   SHARE TO FACEBOOK
                 </p>
               </div>
             </div>
           </li>
         </FacebookShareButton>
+        {/* twitter button */}
         <TwitterShareButton
           url={pdfUrl}
           title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
         >
-          <li className="flex justify-between gap-x-6 py-5" id="button">
-            <div className="flex min-w-0 gap-x-4 ">
+          <li
+            className="flex items-center justify-center gap-x-6 py-5 w-full"
+            id="button"
+          >
+            <div className="flex items-center justify-center w-full">
               <svg
-                class="w-8 h-8 me-2"
+                className="w-8 h-8 me-2 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -86,22 +92,29 @@ const Links = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              <div className="min-w-0 flex-auto">
-                <p className="text-md font-semibold leading-6 text-gray-900">
-                  SHARE TO X
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
+                  SHARE TO TWITTER
                 </p>
               </div>
             </div>
           </li>
         </TwitterShareButton>
+
+        {/* linkedin button */}
+
         <LinkedinShareButton
           url={pdfUrl}
           title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
+          summary="Tina's Wish Symptoms, The Silent Killer"
         >
-          <li className="flex justify-between gap-x-6 py-5" id="button">
-            <div className="flex min-w-0 gap-x-4 ">
+          <li
+            className="flex items-center justify-center gap-x-6 py-5 w-full"
+            id="button"
+          >
+            <div className="flex items-center justify-center w-full">
               <svg
-                className="w-8 h-8 text-black"
+                className="w-8 h-8 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -117,19 +130,26 @@ const Links = () => {
                 <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
 
-              <div className="min-w-0 flex-auto">
-                <p className="text-md font-semibold leading-6 text-gray-900">
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
                   SHARE TO LINKEDIN
                 </p>
               </div>
             </div>
           </li>
         </LinkedinShareButton>
-        <WhatsappShareButton>
-          <li className="flex justify-between gap-x-6 py-5" id="button">
-            <div className="flex min-w-0 gap-x-4 ">
+        <WhatsappShareButton
+          title="A Message About Ovarian Cancer"
+          separator=" "
+          url={pdfUrl}
+        >
+          <li
+            className="flex items-center justify-center gap-x-6 py-5 w-full"
+            id="button"
+          >
+            <div className="flex items-center justify-center w-full">
               <svg
-                className="w-8 h-8 text-black"
+                className="w-8 h-8 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -149,23 +169,17 @@ const Links = () => {
                 />
               </svg>
 
-              <div className="min-w-0 flex-auto">
-                <p className="text-md font-semibold leading-6 text-gray-900">
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
                   SHARE VIA WHATSAPP
                 </p>
               </div>
             </div>
-          </li>{" "}
+          </li>
         </WhatsappShareButton>
       </ul>
     </div>
   );
 };
-
-{
-  /* onClick="location.href=mailto:?subject=Check%20out%20Tina's%20Wish&body=Check%20out%20Tina's%20Wish%20at%20https%3A%2F%2Fwww.tinaswish.org%2F" */
-  // onClick={() =>
-  //   window.open("https://www.facebook.com/tinaswish", "_blank")
-}
 
 export default Links;
