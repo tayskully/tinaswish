@@ -37,6 +37,9 @@ const Header = () => {
         detection of ovarian cancer and to educating women and people with
         ovaries about their gynecologic health. Know Early. Know Hope.® This is
         our mission.
+        <br />
+        <br />
+        Use this page to help spread awareness about the symptoms Ovarian Cancer through sharing the link to our flier:
       </p>
     </>
   );

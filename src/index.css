@@ -27,7 +27,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #01a19a; 
+  color: #01a19a;
 }
 
 body {
@@ -45,7 +45,6 @@ h1 {
 
 #button {
   border-radius: 90px;
-  border: 1px solid #2d1a55;
   padding: 0.6em 1.2em;
   margin: 10px 10px 10px 10px;
   min-width: 500px;
@@ -56,6 +55,12 @@ h1 {
   cursor: pointer;
   transition: border-color 0.25s;
   max-width: 500px;
+}
+.specialButton {
+  background-color: #870853 !important;
+}
+.specialButton:hover {
+  background-color: #e69e00 !important;
 }
 
 #button:hover {
