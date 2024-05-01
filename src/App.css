@@ -28,7 +28,7 @@
 }
 #listen:hover,
 #donate:hover {
-  background-color: #edc61a;
+  background-color: #e69e00;
   color: white;
 }
 .tinaslogo {
@@ -63,7 +63,7 @@
 
 #button:hover {
   border-color: #cbede8;
-  background: #14727a;
+  background: #232c6f;
   box-shadow: inset;
 }
 button:focus,

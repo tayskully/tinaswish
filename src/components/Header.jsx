@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white flex flex-col lg:flex-row justify-center items-center border-b-4 border-gray-200">
-        <div className="lg:border-0 border-4 border-gray-200">
+        <div className="block">
           <div className="flex justify-center items-baseline p-5 px-10">
             <img
               src="./tinaswish.svg"
@@ -12,7 +12,7 @@ const Header = () => {
               alt="Tina's wish foundation logo"
               href="https://tinaswish.org/"
             />
-            <h1 className="text-5xl text-nowrap lg:text-6xl lg:px-4 tina">
+            <h1 className="text-5xl text-bold text-nowrap lg:text-6xl lg:px-4 tina">
               Tina's Wish
             </h1>
           </div>
@@ -39,7 +39,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-   
+
       <p
         id="blurb"
         className="p-10 m-10 text-lg text-left font-bold p-10 lg:border-0  sm:text-md sm:border-4 sm:border-gray-200 sm:p-0"
@@ -65,12 +65,12 @@ const Header = () => {
         power.
       </p>
       <div className="flex justify-center">
-      <img
-        src="./symptoms.svg"
-        className="symptoms w-10/12"
-        alt="symptoms of ovarian cancer info graphic"
-        href="https://tinaswish.org/"
-      />
+        <img
+          src="./symptoms.svg"
+          className="symptoms w-10/12"
+          alt="symptoms of ovarian cancer info graphic"
+          href="https://tinaswish.org/"
+        />
       </div>
     </>
   );
