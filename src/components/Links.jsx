@@ -10,7 +10,7 @@ const Links = () => {
   const postcard = "sharetinaswish.png";
   // const pdfUrl = `${window.location.origin}/${postcard}`;
   const pdfUrl = `${window.location.origin}`;
-  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20https%3A%2F%2F${pdfUrl}`;
+  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${pdfUrl}`;
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
