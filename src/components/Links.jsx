@@ -15,8 +15,8 @@ const Links = () => {
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
-      <ul role="list" className="min-w-80 flex flex-col mx-auto">
-      <a href={textUrl}>
+      <ul role="list" className="w-full flex flex-col items-center">
+        <a href={textUrl}>
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -53,7 +53,7 @@ const Links = () => {
           subject="A Message About Tina's Wish"
           body="Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more."
           url={pdfUrl}
-          className=""
+          className="EmailShare"
         >
           <li id="button">
             <div className="flex items-center justify-center w-full">
@@ -215,6 +215,38 @@ const Links = () => {
         <li
           className="flex items-center justify-center gap-x-6 py-5 w-full specialButton"
           id="button"
+          onClick={() =>
+            window.open("https://tinaswish.org/empoweru/", "_blank")
+          }
+        >
+          <div className="flex items-center justify-center w-full">
+            <svg
+              className="w-8 h-8 text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 5a7 7 0 0 0-7 7v1.17c.313-.11.65-.17 1-.17h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H6a3 3 0 0 1-3-3v-6a9 9 0 0 1 18 0v6a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h2c.35 0 .687.06 1 .17V12a7 7 0 0 0-7-7Z"
+                clipRule="evenodd"
+              />
+            </svg>
+
+            <div className="flex-auto text-center">
+              <p className="text-md font-semibold leading-6 text-white">
+                LISTEN TO OUR PODCASTS
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          className="flex items-center justify-center gap-x-6 py-5 w-full specialButton"
+          id="button"
           onClick={() => window.open("https://tinaswish.org/", "_blank")}
         >
           <div className="flex items-center justify-center w-full">
@@ -242,12 +274,17 @@ const Links = () => {
             </div>
           </div>
         </li>
-       
       </ul>
     </div>
   );
 };
 
-// href="sms:&body=What%20do%20you%20think%20of%20this%20home%3F%20https%3A%2F%2Fwww.zillow.com%2Fhomedetails%2F1402-E-2nd-St-Austin-TX-78702%2F29384365_zpid%2F%3Futm_source%3Dtxtshare"
+<button
+  className="bg-rose-800 text-white p-5 m-2 text-lg tracking-wide cursor-pointer relative shadow"
+  id="listen"
+  onClick={() => window.open("https://tinaswish.org/empoweru/", "_blank")}
+>
+  PODCASTS
+</button>;
 
 export default Links;

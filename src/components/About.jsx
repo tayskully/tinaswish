@@ -13,7 +13,7 @@ const About = () => {
           Tina's Wish
         </h1>
       </div>
-      <p className="text-xl bg-white text-black p-5">
+      <p className="text-xl bg-white text-black p-5 sm:p-1">
         Tina's Wish funds groundbreaking research for the early detection and
         prevention of ovarian cancer, and provides education on a variety of
         gynecologic health topics. Know Early. Know Hope®. This is our mission.
