@@ -1,4 +1,8 @@
+// import postcard from "./sharetinaswish.svg";
+
 const Header = () => {
+  const postcard = "sharetinaswish.png";
+  const pdfUrl = `${window.location.origin}/${postcard}`;
   return (
     <>
       <p
@@ -30,7 +34,7 @@ const Header = () => {
           src="./symptoms.svg"
           className="symptoms w-10/12"
           alt="symptoms of ovarian cancer info graphic"
-          href="https://tinaswish.org/"
+          onClick={() => window.open({ pdfUrl }, "_blank", console.log(pdfUrl))}
         />
       </div>
     </>

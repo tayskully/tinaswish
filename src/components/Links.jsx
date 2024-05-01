@@ -7,10 +7,9 @@ import {
 } from "react-share";
 
 const Links = () => {
-  const postcard = "sharetinaswish.png";
-  // const pdfUrl = `${window.location.origin}/${postcard}`;
-  const pdfUrl = `${window.location.origin}`;
-  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${pdfUrl}`;
+
+  const url = `${window.location.origin}`;
+  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${url}`;
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
@@ -33,9 +32,9 @@ const Links = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillule="evenodd"
                   d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
                 <path
                   fillRule="evenodd"
@@ -57,7 +56,7 @@ const Links = () => {
         <EmailShareButton
           subject="A Message About Tina's Wish"
           body="Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more."
-          url={pdfUrl}
+          url={url}
           className="EmailShare"
         >
           <li id="button">
@@ -81,7 +80,7 @@ const Links = () => {
           </li>
         </EmailShareButton>
         {/* facebook button */}
-        <FacebookShareButton url={pdfUrl}>
+        <FacebookShareButton url={url}>
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -111,7 +110,7 @@ const Links = () => {
         </FacebookShareButton>
         {/* twitter button */}
         <TwitterShareButton
-          url={pdfUrl}
+          url={url}
           title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
         >
           <li
@@ -143,7 +142,7 @@ const Links = () => {
         {/* linkedin button */}
 
         <LinkedinShareButton
-          url={pdfUrl}
+          url={url}
           title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
           summary="Tina's Wish Symptoms, The Silent Killer"
         >
@@ -180,7 +179,7 @@ const Links = () => {
         <WhatsappShareButton
           title="A Message About Ovarian Cancer"
           separator=" "
-          url={pdfUrl}
+          url={url}
         >
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
