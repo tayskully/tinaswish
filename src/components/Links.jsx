@@ -10,11 +10,44 @@ const Links = () => {
   const postcard = "sharetinaswish.png";
   // const pdfUrl = `${window.location.origin}/${postcard}`;
   const pdfUrl = `${window.location.origin}`;
+  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20https%3A%2F%2F${pdfUrl}`;
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
       <ul role="list" className="min-w-80 flex flex-col mx-auto">
+      <a href={textUrl}>
+          <li
+            className="flex items-center justify-center gap-x-6 py-5 w-full"
+            id="button"
+          >
+            <div className="flex items-center justify-center w-full">
+              <svg
+                className="w-8 h-8 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeWidth="2"
+                  d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+
+              <div className="flex-auto text-center">
+                <p className="text-md font-semibold leading-6 text-white">
+                  SHARE VIA TEXT
+                  {/* source%3Dtxtshare */}
+                </p>
+              </div>
+            </div>
+          </li>
+        </a>
         {/* email button */}
         <EmailShareButton
           subject="A Message About Tina's Wish"
@@ -96,7 +129,7 @@ const Links = () => {
               </svg>
               <div className="flex-auto text-center">
                 <p className="text-md font-semibold leading-6 text-white">
-                  SHARE TO TWITTER
+                  SHARE TO X (TWITTER)
                 </p>
               </div>
             </div>
@@ -209,9 +242,12 @@ const Links = () => {
             </div>
           </div>
         </li>
+       
       </ul>
     </div>
   );
 };
+
+// href="sms:&body=What%20do%20you%20think%20of%20this%20home%3F%20https%3A%2F%2Fwww.zillow.com%2Fhomedetails%2F1402-E-2nd-St-Austin-TX-78702%2F29384365_zpid%2F%3Futm_source%3Dtxtshare"
 
 export default Links;

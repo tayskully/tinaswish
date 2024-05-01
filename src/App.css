@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .postcard {
   margin: 1rem;
   padding: 1rem;
@@ -19,23 +18,28 @@
 }
 
 .tina {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #14727a;
 }
-#donate, #listen {
-  font-family: 'Archivo Narrow';
+#donate,
+#listen {
+  font-family: "Archivo Narrow";
   font-weight: 700;
 }
-
-#listen:hover, #donate:hover {
-  background-color:  #edc61a;
+#listen:hover,
+#donate:hover {
+  background-color: #edc61a;
   color: white;
 }
-
 .tinaslogo {
   height: 4rem;
 }
 
+#blurb {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
 
 #button {
   border-radius: 90px;
@@ -48,7 +52,7 @@
   background-color: #562c6f;
   cursor: pointer;
   transition: border-color 0.25s;
-  max-width: 500px;
+  max-width:max-content;
 }
 .specialButton {
   background-color: #870853 !important;
@@ -68,21 +72,19 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {
-
   #button {
-      border-radius: 90px;
-      padding: 0.6em 1.2em;
-      margin: 10px 10px 10px 10px;
-      min-width: 300px;
-      font-size: 2em;
-      font-weight: 500;
-      font-family: inherit;
-      background-color: #562c6f;
-      transition: border-color 0.25s;
-      font-size:smaller;
+    border-radius: 90px;
+    padding: 0.6em 1.2em;
+    margin: 10px 10px 10px 10px;
+    min-width: 300px;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #562c6f;
+    transition: border-color 0.25s;
+    font-size: smaller;
   }
   .postcard {
     max-width: 100%;
   }
 }
-

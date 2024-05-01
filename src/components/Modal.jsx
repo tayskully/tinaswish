@@ -12,7 +12,7 @@ import {
 
 export function Component() {
   const [openModal, setOpenModal] = useState(true);
-  
+
   const postcard = "sharetinaswish.png";
   // const pdfUrl = `${window.location.origin}/${postcard}`;
   const pdfUrl = `${window.location.origin}`;
@@ -25,7 +25,13 @@ export function Component() {
       >
         SHARE
       </Button>
-      <Modal className="bg-white w-1/3 h-3/4"  position="center" dismissible show={openModal} onClose={() => setOpenModal(false)}>
+      <Modal
+        className="bg-white w-1/3 h-3/4"
+        position="center"
+        dismissible
+        show={openModal}
+        onClose={() => setOpenModal(false)}
+      >
         <Modal.Header>Share with your loved ones</Modal.Header>
         <Modal.Body>
           <div className="flex items-center justify-center gap-x-6 py-5 w-full">

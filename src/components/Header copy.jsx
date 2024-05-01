@@ -3,11 +3,11 @@ import postcard from "/sharetinaswish.png";
 const Header = () => {
   return (
     <>
-      <header className="bg-white flex flex-col lg:flex-row justify-center items-center border-b-4 border-gray-200">
+      <header className="inline lg:flex lg:justify-center">
         <div className="lg:border-0 border-4 border-gray-200">
           <div className="flex justify-center items-baseline p-5 px-10">
             <img
-              src="./tinaswish.svg"
+              src="./tinaswish_logo_white.svg"
               className="tinaslogo sm:px-10"
               alt="Tina's wish foundation logo"
               href="https://tinaswish.org/"
@@ -39,10 +39,10 @@ const Header = () => {
           </div>
         </div>
       </header>
-   
+      <div className="">
       <p
         id="blurb"
-        className="p-10 m-10 text-lg text-left font-bold p-10 lg:border-0  sm:text-md sm:border-4 sm:border-gray-200 sm:p-0"
+        className="text-lg text-left font-bold p-10 lg:border-0  sm:text-md sm:border-4 sm:border-gray-200 sm:p-0"
       >
         Dear friend,
         <br />
@@ -64,7 +64,6 @@ const Header = () => {
         disease that often goes undiagnosed until far too late. Information is
         power.
       </p>
-      <div className="flex justify-center">
       <img
         src="./symptoms.svg"
         className="symptoms w-10/12"
