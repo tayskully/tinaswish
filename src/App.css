@@ -3,22 +3,13 @@
 @tailwind utilities;
 
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Archivo Narrow', sans-serif;
-}
-
 .postcard {
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  min-width:200px;
+  max-width: 65%;
 }
 .logo {
   height: 6em;
@@ -43,5 +34,55 @@
 
 .tinaslogo {
   height: 4rem;
+}
+
+
+#button {
+  border-radius: 90px;
+  padding: 0.6em 1.2em;
+  margin: 10px 10px 10px 10px;
+  min-width: 500px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #562c6f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  max-width: 500px;
+}
+.specialButton {
+  background-color: #870853 !important;
+}
+.specialButton:hover {
+  background-color: #e69e00 !important;
+}
+
+#button:hover {
+  border-color: #cbede8;
+  background: #14727a;
+  box-shadow: inset;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #button {
+      border-radius: 90px;
+      padding: 0.6em 1.2em;
+      margin: 10px 10px 10px 10px;
+      min-width: 300px;
+      font-size: 2em;
+      font-weight: 500;
+      font-family: inherit;
+      background-color: #562c6f;
+      transition: border-color 0.25s;
+      font-size:smaller;
+  }
+  .postcard {
+    max-width: 100%;
+  }
 }
 

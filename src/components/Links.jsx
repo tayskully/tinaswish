@@ -7,8 +7,9 @@ import {
 } from "react-share";
 
 const Links = () => {
-  const postcard = "/sharetinaswish.png";
-  const pdfUrl = `${window.location.origin}/${postcard}`;
+  const postcard = "sharetinaswish.png";
+  // const pdfUrl = `${window.location.origin}/${postcard}`;
+  const pdfUrl = `${window.location.origin}`;
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
@@ -19,8 +20,9 @@ const Links = () => {
           subject="A Message About Tina's Wish"
           body="Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more."
           url={pdfUrl}
+          className=""
         >
-          <li className="flex justify-between gap-x-6 py-5" id="button">
+          <li id="button">
             <div className="flex items-center justify-center w-full">
               <svg
                 className="w-7 h-7 text-white me-2"
@@ -55,9 +57,9 @@ const Links = () => {
                 viewBox="0 0 8 19"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
 
@@ -87,9 +89,9 @@ const Links = () => {
                 viewBox="0 0 20 17"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               <div className="flex-auto text-center">
@@ -123,9 +125,9 @@ const Links = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
                 <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
@@ -159,9 +161,9 @@ const Links = () => {
               >
                 <path
                   fill="currentColor"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
                 <path
                   fill="currentColor"
