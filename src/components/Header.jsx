@@ -3,7 +3,7 @@ const Header = () => {
     <>
       <p
         id="blurb"
-        className="leading-normal p-5 m-2 text-md text-left font-bold lg:text-lg lg:m-5 lg:p-10"
+        className="leading-normal p-5 m-2 text-md text-left font-bold lg:text-3xl md:m-5 md:p-10 lg:m-5 lg:p-10"
       >
         Dear friend,
         <br />
