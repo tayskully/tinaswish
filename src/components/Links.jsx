@@ -15,6 +15,7 @@ const Links = () => {
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
+      {/* text button */}
       <ul role="list" className="w-full flex flex-col items-center">
         <a href={textUrl}>
           <li
@@ -23,19 +24,23 @@ const Links = () => {
           >
             <div className="flex items-center justify-center w-full">
               <svg
-                className="w-8 h-8 text-gray-800 dark:text-white"
+                className="w-8 h-8 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="none"
+                fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  fill-rule="evenodd"
+                  d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fillRule="evenodd"
+                  d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z"
+                  clipRule="evenodd"
                 />
               </svg>
 
@@ -115,18 +120,17 @@ const Links = () => {
           >
             <div className="flex items-center justify-center w-full">
               <svg
-                className="w-8 h-8 me-2 text-white"
+                className="w-8 h-8 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 fill="currentColor"
-                viewBox="0 0 20 17"
+                viewBox="0 0 24 24"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                  clipRule="evenodd"
-                />
+                <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
               </svg>
+
               <div className="flex-auto text-center">
                 <p className="text-md font-semibold leading-6 text-white">
                   SHARE TO X (TWITTER)
@@ -239,37 +243,6 @@ const Links = () => {
             <div className="flex-auto text-center">
               <p className="text-md font-semibold leading-6 text-white">
                 LISTEN TO OUR PODCASTS
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li
-          className="flex items-center justify-center gap-x-6 py-5 w-full specialButton"
-          id="button"
-          onClick={() => window.open("https://tinaswish.org/", "_blank")}
-        >
-          <div className="flex items-center justify-center w-full">
-            <svg
-              className="w-8 h-8 text-gray-800 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeWidth="2"
-                d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
-
-            <div className="flex-auto text-center">
-              <p className="text-md font-semibold leading-6 text-white">
-                OR VISIT OUR WEBSITE TO LEARN MORE
               </p>
             </div>
           </div>
