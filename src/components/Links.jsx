@@ -71,7 +71,7 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
         </a>
         {/* email button */}
 
-        <a href={`mailto:?subject=${subject}&body=${body}`}>
+        <a href={`mailto:?subject=${subject}&body=${body}`} target="_parent">
           <li id="button">
             <div className="flex items-center justify-center w-full">
               <svg
