@@ -29,14 +29,19 @@ const Header = () => {
         disease that often goes undiagnosed until far too late. Information is
         power.
       </p>
-      <div className="flex justify-center">
+
+      <a
+        className="flex justify-center"
+        id="symptoms"
+        href="./sharetinaswish.png"
+        download="sharetinaswish.png"
+      >
         <img
           src="./symptoms.svg"
           className="symptoms w-10/12"
           alt="symptoms of ovarian cancer info graphic"
-          onClick={() => window.open({ pdfUrl }, "_blank", console.log(pdfUrl))}
         />
-      </div>
+      </a>
     </>
   );
 };

@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.postcard {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  max-width: 65%;
+#symptoms {
+  width:100%;
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -21,16 +17,7 @@
   font-family: "Times New Roman", Times, serif;
   color: #14727a;
 }
-#donate,
-#listen {
-  font-family: "Archivo Narrow";
-  font-weight: 700;
-}
-#listen:hover,
-#donate:hover {
-  background-color: #edc61a;
-  color: white;
-}
+
 .tinaslogo {
   height: 4rem;
 }
@@ -82,8 +69,5 @@ button:focus-visible {
     background-color: #562c6f;
     transition: border-color 0.25s;
     font-size: smaller;
-  }
-  .postcard {
-    max-width: 100%;
   }
 }

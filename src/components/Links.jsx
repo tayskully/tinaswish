@@ -7,8 +7,8 @@ import {
 } from "react-share";
 
 const Links = () => {
-
-  const url = `${window.location.origin}`;
+  // const url = `${window.location.origin}`;
+  const url = "https://tinaswish.org/share/";
   const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${url}`;
 
   return (
@@ -32,7 +32,7 @@ const Links = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fillule="evenodd"
+                  fillRule="evenodd"
                   d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
                   clipRule="evenodd"
                 />
