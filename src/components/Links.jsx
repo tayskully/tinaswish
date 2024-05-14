@@ -1,5 +1,4 @@
 import {
-  EmailShareButton,
   FacebookShareButton,
   TwitterShareButton,
   WhatsappShareButton,
@@ -7,12 +6,28 @@ import {
 } from "react-share";
 
 const Links = () => {
-
-  // URL dynamic for each link - static now that it is established 
+  // URL dynamic for each link - static now that it is established
   // const url = `${window.location.origin}`;
   const url = "https://tinaswish.org/share/";
-  const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${url}`;
+  const baseText = `Dear friend,
 
+I recently connected with Tina's Wish, a meaningful organization with a mission to find an early detection for ovarian cancer.
+
+The Foundation is committed to promoting awareness about this disease, also known as "the silent killer".
+
+Keep these signs and symptoms in mind and if you are experiencing any of them for more than two weeks, please seek out professional medical advice.
+
+Feel free to share this important information with others. This is a disease that often goes undiagnosed until far too late. Information is power.
+
+Please visit their website to learn more: https://tinaswish.org/share/ `;
+
+  const encodedText = encodeURIComponent(baseText);
+  const textUrl = `sms:&body=${encodedText}`;
+
+  const subject = encodeURIComponent("A Message About Tina's Wish");
+  const body = encodeURIComponent(
+    "Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more: https://www.tinaswish.org/share"
+  );
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
@@ -55,12 +70,8 @@ const Links = () => {
           </li>
         </a>
         {/* email button */}
-        <EmailShareButton
-          subject="A Message About Tina's Wish"
-          body="Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more."
-          url={url}
-          className="EmailShare"
-        >
+
+        <a href={`mailto:?subject=${subject}&body=${body}`}>
           <li id="button">
             <div className="flex items-center justify-center w-full">
               <svg
@@ -80,7 +91,7 @@ const Links = () => {
               </div>
             </div>
           </li>
-        </EmailShareButton>
+        </a>
         {/* facebook button */}
         <FacebookShareButton url={url}>
           <li
