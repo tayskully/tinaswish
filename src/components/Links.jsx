@@ -7,6 +7,8 @@ import {
 } from "react-share";
 
 const Links = () => {
+
+  // URL dynamic for each link - static now that it is established 
   // const url = `${window.location.origin}`;
   const url = "https://tinaswish.org/share/";
   const textUrl = `sms:&body=Tinas%20Wish%20Foundation%20thinks%20you%20should%20understand%20the%20signs%20of%20Ovarian%20Cancer%20${url}`;
@@ -16,7 +18,7 @@ const Links = () => {
       {/* share buttons */}
       {/* text button */}
       <ul role="list" className="w-full flex flex-col items-center">
-        <a href={textUrl}>
+        <a href={textUrl} target="_parent">
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
