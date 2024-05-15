@@ -9,31 +9,37 @@ const Links = () => {
   // URL dynamic for each link - static now that it is established
   // const url = `${window.location.origin}`;
   const url = "https://tinaswish.org/share/";
+
+  //texting
   const baseText = `Dear friend,
-
-I recently connected with Tina's Wish, a meaningful organization with a mission to find an early detection for ovarian cancer.
-
-The Foundation is committed to promoting awareness about this disease, also known as "the silent killer".
-
-Keep these signs and symptoms in mind and if you are experiencing any of them for more than two weeks, please seek out professional medical advice.
-
-Feel free to share this important information with others. This is a disease that often goes undiagnosed until far too late. Information is power.
-
-Please visit their website to learn more: https://tinaswish.org/share/ `;
-
+ 
+  I recently connected with Tina's Wish, a meaningful organization with a mission to find an early detection for ovarian cancer.
+   
+  The Foundation is committed to promoting awareness about this disease, also known as "the silent killer".
+   
+  Keep these signs and symptoms in mind and if you are experiencing any of them for more than two weeks, please seek out professional medical advice.
+   
+  Feel free to share this important information with others. This is a disease that often goes undiagnosed until far too late. Information is power.
+   
+  Please visit their website to learn more: https://tinaswish.org/share/`;
   const encodedText = encodeURIComponent(baseText);
-  const textUrl = `sms:&body=${encodedText}`;
 
+  // email
   const subject = encodeURIComponent("A Message About Tina's Wish");
   const body = encodeURIComponent(
     "Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more: https://www.tinaswish.org/share"
   );
+
+  //social
+  const socialText = `Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!  https://tinaswish.org/share/`;
+  const encodedTextSocial = encodeURIComponent(socialText);
+
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
       {/* text button */}
       <ul role="list" className="w-full flex flex-col items-center">
-        <a href={textUrl} target="_parent">
+        <a href={`sms:&body=${encodedText}`} target="_parent">
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -63,7 +69,6 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
               <div className="flex-auto text-center">
                 <p className="text-md font-semibold leading-6 text-white">
                   SHARE VIA TEXT
-                  {/* source%3Dtxtshare */}
                 </p>
               </div>
             </div>
@@ -93,7 +98,12 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
           </li>
         </a>
         {/* facebook button */}
-        <FacebookShareButton url={url}>
+        <FacebookShareButton
+          url={url}
+          quote={socialText}
+          hashtag={socialText}
+          description={"Share Tinas Wish"}
+        >
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -122,10 +132,7 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
           </li>
         </FacebookShareButton>
         {/* twitter button */}
-        <TwitterShareButton
-          url={url}
-          title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
-        >
+        <TwitterShareButton url={url} title={socialText}>
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -156,8 +163,8 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
 
         <LinkedinShareButton
           url={url}
-          title="Hello Friends, Please share Tina's Wish with your loved ones in order to spread the word about the symptoms of Ovarian Cancer."
-          summary="Tina's Wish Symptoms, The Silent Killer"
+          title={socialText}
+          summary="Share Tina's Wish- the signs and symptoms of ovarian cancer"
         >
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
@@ -189,11 +196,7 @@ Please visit their website to learn more: https://tinaswish.org/share/ `;
             </div>
           </li>
         </LinkedinShareButton>
-        <WhatsappShareButton
-          title="A Message About Ovarian Cancer"
-          separator=" "
-          url={url}
-        >
+        <WhatsappShareButton title={socialText} separator=" " url={url}>
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"

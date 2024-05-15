@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
-  font-family: "Archivo Narrow", Helvetica, system-ui, Arial, sans-serif;
+  font-family: "Archivo Narrow", Helvetica, system-ui, Arial,
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
