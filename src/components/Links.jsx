@@ -26,13 +26,10 @@ const Links = () => {
 
   // email
   const subject = encodeURIComponent("A Message About Tina's Wish");
-  const body = encodeURIComponent(
-    "Hi Friend, Tina's Wish Foundation hopes to share the symptoms and treatments of ovarian cancer with you. Please visit our website to learn more: https://www.tinaswish.org/share"
-  );
+  const body = encodeURIComponent(baseText);
 
   //social
   const socialText = `Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!  https://tinaswish.org/share/`;
-  const encodedTextSocial = encodeURIComponent(socialText);
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
@@ -196,7 +193,7 @@ const Links = () => {
             </div>
           </li>
         </LinkedinShareButton>
-        <WhatsappShareButton title={socialText} separator=" " url={url}>
+        <WhatsappShareButton title={baseText} separator=" " url={url}>
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
