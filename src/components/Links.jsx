@@ -53,7 +53,7 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
 {/* Download Button  */}
       <ul role="list" className="w-full flex flex-col items-center">
 
-      <li
+      {/* <li
         className="flex items-center justify-center gap-x-6 py-5 w-full"
         id="button"
         onClick={handleDownloadAndCopy}
@@ -66,7 +66,7 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
             fill="currentColor"
             viewBox="0 0 24 24"
           >
-            {/* SVG icon */}
+        
             <path
               fillRule="evenodd"
               d="M5 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3zm2 2v12h10V5H7zm2 14v-2h6v2H9z"
@@ -79,7 +79,8 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
             </p>
           </div>
         </div>
-      </li>
+      </li> */}
+      
       {/* text button */}
         <a href={`sms:&body=${encodedText}`} target="_parent">
           <li
