@@ -32,20 +32,20 @@ const Links = () => {
   //social
   const socialText = `Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!  https://tinaswish.org/share/`;
 const socialTextTwitter='Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!'
-  const handleDownloadAndCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(baseText);
-      alert("Text copied to clipboard");
-      const link = document.createElement("a");
-      link.href = imageUrl;
-      link.download = "sharetinaswish.png";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (err) {
-      console.error("Failed to copy or download: ", err);
-    }
-  };
+  // const handleDownloadAndCopy = async () => {
+  //   try {
+  //     await navigator.clipboard.writeText(baseText);
+  //     alert("Text copied to clipboard");
+  //     const link = document.createElement("a");
+  //     link.href = imageUrl;
+  //     link.download = "sharetinaswish.png";
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   } catch (err) {
+  //     console.error("Failed to copy or download: ", err);
+  //   }
+  // };
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
@@ -80,7 +80,7 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
           </div>
         </div>
       </li> */}
-      
+
       {/* text button */}
         <a href={`sms:&body=${encodedText}`} target="_parent">
           <li
