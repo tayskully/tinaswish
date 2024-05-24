@@ -41,6 +41,9 @@ const Header = () => {
           className="symptoms w-10/12"
           alt="symptoms of ovarian cancer info graphic"
         />
+           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          CLICK TO DOWNLOAD OUR POSTCARD
+        </div>
       </a>
     </>
   );

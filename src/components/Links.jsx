@@ -1,5 +1,4 @@
 import {
-  FacebookShareButton,
   TwitterShareButton,
   WhatsappShareButton,
   LinkedinShareButton,
@@ -37,11 +36,12 @@ const Links = () => {
   const facebookLink =
     "https://www.facebook.com/dialog/share?app_id=966242223397117&href=https%3A%2F%2Ftinaswish.org%2Fshare%2F&quote=Hi+friends%2C+Please+share+these+signs+%26+symptoms+and+the+mission+of+Tina%E2%80%99s+Wish+with+your+loved+ones+to+spread+the+word+about+ovarian+cancer.+This+is+a+disease+that+often+goes+undiagnosed+until+far+too+late.+Information+is+power%21++https%3A%2F%2Ftinaswish.org%2Fshare%2F&display=popup";
 
+
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
-     
 
+      <ul role="list" className="w-full flex flex-col items-center">
         {/* text button */}
         <a href={`sms:&body=${encodedText}`} target="_parent">
           <li
