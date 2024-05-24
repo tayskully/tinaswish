@@ -2,7 +2,7 @@
 
 const Header = () => {
   const postcard = "sharetinaswish.png";
-  const pdfUrl = `${window.location.origin}/${postcard}`;
+  // const pdfUrl = `${window.location.origin}/${postcard}`;
   return (
     <>
       <p

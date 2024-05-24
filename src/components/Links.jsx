@@ -9,7 +9,8 @@ const Links = () => {
   // URL dynamic for each link - static now that it is established
   // const url = `${window.location.origin}`;
   const url = "https://tinaswish.org/share/";
-  const imageUrl = "https://blue-pebble-0c15b7710.5.azurestaticapps.net/sharetinaswish.png";
+  const imageUrl =
+    "https://blue-pebble-0c15b7710.5.azurestaticapps.net/sharetinaswish.png";
 
   //texting
   const baseText = `Dear friend,
@@ -31,57 +32,17 @@ const Links = () => {
 
   //social
   const socialText = `Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!  https://tinaswish.org/share/`;
-const socialTextTwitter='Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!'
-  // const handleDownloadAndCopy = async () => {
-  //   try {
-  //     await navigator.clipboard.writeText(baseText);
-  //     alert("Text copied to clipboard");
-  //     const link = document.createElement("a");
-  //     link.href = imageUrl;
-  //     link.download = "sharetinaswish.png";
-  //     document.body.appendChild(link);
-  //     link.click();
-  //     document.body.removeChild(link);
-  //   } catch (err) {
-  //     console.error("Failed to copy or download: ", err);
-  //   }
-  // };
+  const socialTextTwitter =
+    "Hi friends, Please share these signs & symptoms and the mission of Tina’s Wish with your loved ones to spread the word about ovarian cancer. This is a disease that often goes undiagnosed until far too late. Information is power!";
+  const facebookLink =
+    "https://www.facebook.com/dialog/share?app_id=966242223397117&href=https%3A%2F%2Ftinaswish.org%2Fshare%2F&quote=Hi+friends%2C+Please+share+these+signs+%26+symptoms+and+the+mission+of+Tina%E2%80%99s+Wish+with+your+loved+ones+to+spread+the+word+about+ovarian+cancer.+This+is+a+disease+that+often+goes+undiagnosed+until+far+too+late.+Information+is+power%21++https%3A%2F%2Ftinaswish.org%2Fshare%2F&display=popup";
 
   return (
     <div className="flex items-center justify-center gap-x-6 py-5 w-full">
       {/* share buttons */}
-{/* Download Button  */}
-      <ul role="list" className="w-full flex flex-col items-center">
+     
 
-      {/* <li
-        className="flex items-center justify-center gap-x-6 py-5 w-full"
-        id="button"
-        onClick={handleDownloadAndCopy}
-      >
-        <div className="flex items-center justify-center w-full">
-          <svg
-            className="w-8 h-8 text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-        
-            <path
-              fillRule="evenodd"
-              d="M5 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3zm2 2v12h10V5H7zm2 14v-2h6v2H9z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <div className="flex-auto text-center">
-            <p className="text-md font-semibold leading-6 text-white">
-              DOWNLOAD IMAGE & COPY TEXT
-            </p>
-          </div>
-        </div>
-      </li> */}
-
-      {/* text button */}
+        {/* text button */}
         <a href={`sms:&body=${encodedText}`} target="_parent">
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
@@ -141,12 +102,16 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
           </li>
         </a>
         {/* facebook button */}
-        <FacebookShareButton
+
+        {/* <FacebookShareButton
           url={url}
           quote={socialText}
           hashtag={socialText}
           description={"Share Tinas Wish"}
         >
+                 </FacebookShareButton> */}
+
+        <a href={facebookLink} target="_parent">
           <li
             className="flex items-center justify-center gap-x-6 py-5 w-full"
             id="button"
@@ -173,7 +138,8 @@ const socialTextTwitter='Hi friends, Please share these signs & symptoms and the
               </div>
             </div>
           </li>
-        </FacebookShareButton>
+        </a>
+
         {/* twitter button */}
         <TwitterShareButton url={url} title={socialTextTwitter}>
           <li
